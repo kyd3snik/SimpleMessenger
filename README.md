@@ -18,18 +18,15 @@ Now you can run and install the app on the AVD's and check for communication by 
 
 Also Note that-
         
-        * In the app, you can open only one server socket that listens on port 10000 regardless
-        of which AVD your app runs on.
+ * In the app, you can open only one server socket that listens on port 10000 regardless of which AVD your app runs on.
         
-        * The app on avd0 can connect to the listening server socket of the app on 
-                avd1 by connecting to <ip>:<port> == 10.0.2.2:11112.
+ * The app on avd0 can connect to the listening server socket of the app on avd1 by connecting to <ip>:<port> == 10.0.2.2:11112.
         
-        * The app on avd1 can connect to the listening server socket of the app on 
-                avd0 by connecting to <ip>:<port> == 10.0.2.2:11108.
+ * The app on avd1 can connect to the listening server socket of the app on avd0 by connecting to <ip>:<port> == 10.0.2.2:11108.
         
-        * The app knows which AVD it is running on via the following code snippet.
+ * The app knows which AVD it is running on via the following code snippet.
          
-        * If portStr is "5554", then it is avd0. If portStr is "5556",then it is avd1:
+ * If portStr is "5554", then it is avd0. If portStr is "5556",then it is avd1:
         
                 TelephonyManager tel =
                         (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
