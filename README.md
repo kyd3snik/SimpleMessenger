@@ -32,4 +32,9 @@ Also Note that-
                         (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
                 String portStr = tel.getLine1Number().substring(tel.getLine1Number().length() - 4);
 
+There is a tester for checking if everything is working properly.
+
+
+**Note:** The python scripts and tester are provided by [Prof. Steve Ko](http://www.cse.buffalo.edu/people/?u=stevko) from the University at Buffalo.
+
 Happy Messaging :)
